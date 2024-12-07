@@ -15,14 +15,14 @@ export default function StandardPortfolioContent() {
                 <p className="text-lg text-muted-foreground mb-8">
                     Hi I’m Austin Davison, programming is a very integral part of my life and I am very passionate about it.
                     I have been coding since I was 14, I am currently doing an internship at Lhasa Limited where I am loving learning and improving my skills
-                    (especially with an Angular Frontend &amp; Spring Boot Backend technologies) much more,
+                    (especially with an Angular/NextJS Frontends &amp; Spring Boot Backend technologies) much more,
                     while studying and completing my T-Level in Digital Production Design & Development.
                     I also enjoy playing the guitar, drums and basketball.
                 </p>
             </section>
 
             <section className="mb-16">
-                <h2 className="text-3xl font-bold mb-6">My Projects</h2>
+                <h2 className="text-3xl font-bold mb-6">A few of my projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map((project) => (
                         <Card key={project.id} className="overflow-hidden flex flex-col">
@@ -48,7 +48,7 @@ export default function StandardPortfolioContent() {
             </section>
 
             <section className="mb-16">
-                <h2 className="text-3xl font-bold mb-6">What People Have to Say About Me</h2>
+                <h2 className="text-3xl font-bold mb-6">What people have to say about me</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {testimonials.map((testimonial) => (
                         <Card key={testimonial.id} className="flex flex-col h-full">
@@ -65,7 +65,7 @@ export default function StandardPortfolioContent() {
             </section>
 
             <section>
-                <h2 className="text-3xl font-bold mb-6">My Qualifications</h2>
+                <h2 className="text-3xl font-bold mb-6">My qualifications</h2>
                 <ul className="space-y-2">
                     {qualifications.map((qualification) => (
                         <li key={qualification.id} className="flex justify-between items-center border-b py-2">

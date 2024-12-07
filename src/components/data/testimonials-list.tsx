@@ -25,7 +25,7 @@ export const testimonials = [
             "Austin worked through a phased improvement plan and brought lots of ideas and innovation to the process as we went along. \n" +
             "I am not a web developer myself so Austin advised me as we went along the process and developed the brief into something much better than I could have created alone.\n" +
             "The result was a much higher ranking website and healthier Google SEO report which will future proof the website for a while. \n" +
-            "The return on investment was very good and I will always use Austin in future as do some of my other clients who have had excellent advice and service. "
+            "The return on investment was very good and I will always use Austin in future as do some of my other clients who have had excellent advice and service."
     },
     {
         id: 3,

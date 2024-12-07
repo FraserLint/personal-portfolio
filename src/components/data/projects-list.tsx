@@ -22,4 +22,28 @@ export const projects = [
         image: "/project_screenshots/employee_manager.png",
         link: "https://github.com/FraserLint/employee-manager"
     },
+    {
+        id: 4,
+        title: "Personal Portfolio Site ( this one 😂)",
+        description: "A place to showcase a bit about me, my skills, projects & qualifications. " +
+            "Written using NextJS (TypeScript) with ShadCN and TailwindCSS.",
+        image: "/project_screenshots/personal_portfolio.png",
+        link: "https://github.com/FraserLint/personal-portfolio"
+    },
+    {
+        id: 5,
+        title: "Happy2Help: A Discord Chatbot",
+        description: "A Discord chatbot to do all the things a good discord bot should do using the python pycord lib, " +
+            "music, kick, ban, mute/unmute, clear, 8ball. (I wrote this at age 14 and it was got me properly hooked with programming. ",
+        image: "/project_screenshots/happy_2_help.png",
+        link: "https://github.com/FraserLint/Happy2Help"
+    },
+    {
+        id: 6,
+        title: "React Native TODO App",
+        description: "A Small React Native + Expo TODO application to teach myself the fundamentals of the framework, " +
+            "as well as getting used the mobile app development experience using web technologies. ",
+        image: "/project_screenshots/todo_react_native.png",
+        link: "https://github.com/FraserLint/todo-react-native"
+    }
 ]
