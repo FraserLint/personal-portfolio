@@ -3,13 +3,14 @@
 import { useState } from 'react'
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
+import StandardPortfolioContent from "@/components/standard-portfolio-content";
 
 export function Portfolio() {
     const [isDeveloperMode, setIsDeveloperMode] = useState(false)
 
     return (
         <div className="min-h-screen bg-background text-foreground">
-            {/* Adjusted spacing to account for the header */}
+            {/* Top spacing */}
             <div className="h-24 md:h-32 lg:h-48"></div>
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +23,7 @@ export function Portfolio() {
                     {/* Overview and toggle */}
                     <div className="max-w-2xl text-center mb-8">
                         <p className="text-lg mb-6">
-                            Test Paragraph wow this is crazy!
+                            An enthusiastic developer who is always open and eager to learn more.
                         </p>
 
                         <div className="flex items-center justify-center space-x-2">
@@ -43,19 +44,10 @@ export function Portfolio() {
                     {isDeveloperMode ? (
                         <DeveloperFriendlyComponent />
                     ) : (
-                        <StandardComponent />
+                        <StandardPortfolioContent />
                     )}
                 </div>
             </div>
-        </div>
-    )
-}
-
-function StandardComponent() {
-    return (
-        <div className="bg-card text-card-foreground p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-semibold mb-4">Standard View</h2>
-            <p>Test Standard</p>
         </div>
     )
 }
