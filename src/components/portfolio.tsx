@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
 import StandardPortfolioContent from "@/components/standard-portfolio-content";
+import DeveloperFriendlyPortfolioContent from "@/components/developer-friendly-portfolio-content";
 
 export function Portfolio() {
     const [isDeveloperMode, setIsDeveloperMode] = useState(false)
@@ -42,21 +43,12 @@ export function Portfolio() {
                 {/* Conditional rendering based on toggle state */}
                 <div className="w-11/12 mx-auto">
                     {isDeveloperMode ? (
-                        <DeveloperFriendlyComponent />
+                        <DeveloperFriendlyPortfolioContent />
                     ) : (
                         <StandardPortfolioContent />
                     )}
                 </div>
             </div>
-        </div>
-    )
-}
-
-function DeveloperFriendlyComponent() {
-    return (
-        <div className="bg-card text-card-foreground p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-semibold mb-4">Developer-Friendly View</h2>
-            <p>Test Dev</p>
         </div>
     )
 }
