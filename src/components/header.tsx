@@ -37,7 +37,7 @@ export function Header() {
                                 </Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem>
-                                <Link href="https://drive.google.com/file/d/129z96W3392sQAYoqQpyPvIe8JKczbB5x/view?usp=sharing" download>
+                                <Link href="https://drive.google.com/file/d/1YV8dSTWBSDPRgZjTc7QgXhBjzED9Yu0N/view?usp=sharing" download>
                                     Adobe PDF (.pdf)
                                 </Link>
                             </DropdownMenuItem>
