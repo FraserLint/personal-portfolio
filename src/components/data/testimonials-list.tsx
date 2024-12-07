@@ -27,10 +27,10 @@ export const testimonials = [
             "The result was a much higher ranking website and healthier Google SEO report which will future proof the website for a while. \n" +
             "The return on investment was very good and I will always use Austin in future as do some of my other clients who have had excellent advice and service."
     },
-    {
-        id: 3,
-        name: "Alex Johnson",
-        relation: "Colleague",
-        text: "A true team player with excellent problem-solving skills. A pleasure to work with."
-    },
+    // {
+    //     id: 3,
+    //     name: "Alex Johnson",
+    //     relation: "Colleague",
+    //     text: "A true team player with excellent problem-solving skills. A pleasure to work with."
+    // },
 ]
