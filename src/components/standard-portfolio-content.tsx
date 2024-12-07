@@ -11,22 +11,22 @@ const projects = [
         title: "Dock Street Studios Photography Website",
         description: "An innovative redesign for Dock Street Studios SEO optimised website when moving to a new location and rebranding. " +
             "Using web design tools such as Webflow to create an easy to manage CMS.",
-        image: "/project_screenshots/dockstreetscreenshot.png",
+        image: "/project_screenshots/dock_street_website.png",
         link: "https://www.dockstreetstudioleeds.co.uk/"
     },
     {
         id: 2,
-        title: "Task Management App",
-        description: "A productivity app built with React and Firebase",
-        image: "/placeholder.svg?height=200&width=300",
-        link: "/dockstreetscreenshot.png"
+        title: "Swift TODO App",
+        description: "A little to do list app written in swift to teach me Swift, SwiftUI, SwiftData and apple development.",
+        image: "/project_screenshots/swift_to_do.png",
+        link: "https://github.com/FraserLint/swift-to-do"
     },
     {
         id: 3,
         title: "Weather Dashboard",
         description: "Real-time weather information using a third-party API",
         image: "/placeholder.svg?height=200&width=300",
-        link: "/dockstreetscreenshot.png"
+        link: "/dock_street_website.png"
     },
 ]
 
@@ -87,7 +87,7 @@ export default function StandardPortfolioContent() {
             <section className="mb-16">
                 <h1 className="text-3xl font-bold mb-6">A bit about me</h1>
                 <p className="text-lg text-muted-foreground mb-8">
-                    Hi I’m Austin Davison, Programming is a very integral part of my life and I am very passionate about it.
+                    Hi I’m Austin Davison, programming is a very integral part of my life and I am very passionate about it.
                     I have been coding since I was 14, I am currently doing an internship at Lhasa Limited where I am loving learning and improving my skills
                     (especially with an Angular Frontend &amp; Spring Boot Backend technologies) much more,
                     while studying and completing my T-Level in Digital Production Design & Development.
