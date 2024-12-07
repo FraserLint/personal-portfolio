@@ -33,6 +33,7 @@ export function Portfolio() {
                             </Label>
                             <Switch
                                 id="developer-mode"
+                                aria-label="Developer Mode"
                                 checked={isDeveloperMode}
                                 onCheckedChange={setIsDeveloperMode}
                             />
