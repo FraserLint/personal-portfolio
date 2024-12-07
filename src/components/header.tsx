@@ -1,9 +1,15 @@
 'use client'
 
 import { useTheme } from "next-themes"
-import { Moon, Sun } from 'lucide-react'
+import { Moon, Sun, Download } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 export function Header() {
     const { theme, setTheme } = useTheme()
@@ -16,7 +22,27 @@ export function Header() {
                         <span className="font-bold">Austin Davison</span>
                     </Link>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center space-x-4">
+                    <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                            <Button>
+                                <Download className="mr-2 h-4 w-4" />
+                                Download CV/Resume
+                            </Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent>
+                            <DropdownMenuItem>
+                                <Link href="https://docs.google.com/document/d/12kU_iblE7_i8FAbqfC-bVZ2xJRAbrkU9/edit?usp=sharing&ouid=100514720449582119310&rtpof=true&sd=true" download>
+                                    Word (.docx)
+                                </Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                <Link href="https://drive.google.com/file/d/129z96W3392sQAYoqQpyPvIe8JKczbB5x/view?usp=sharing" download>
+                                    Adobe PDF (.pdf)
+                                </Link>
+                            </DropdownMenuItem>
+                        </DropdownMenuContent>
+                    </DropdownMenu>
                     <Button
                         variant="ghost"
                         size="icon"
