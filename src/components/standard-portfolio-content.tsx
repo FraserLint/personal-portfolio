@@ -63,7 +63,8 @@ export default function StandardPortfolioContent() {
                 <p className="text-lg text-muted-foreground mb-8">
                     Hi I’m Austin Davison, Programming is a very integral part of my life and I am very passionate about it.
                     I have been coding since I was 14, I am currently doing an internship at Lhasa Limited where I am loving learning and improving my skills
-                    (especially with an Angular Frontend &amp; Spring Boot Backend technologies) much more.
+                    (especially with an Angular Frontend &amp; Spring Boot Backend technologies) much more,
+                    while studying and completing my T-Level in Digital Production Design & Development.
                     I also enjoy playing the guitar, drums and basketball.
                 </p>
             </section>
