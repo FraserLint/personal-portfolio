@@ -29,9 +29,18 @@ const projects = [
 const testimonials = [
     {
         id: 1,
-        name: "John Doe",
-        relation: "Project Manager",
-        text: "An exceptional developer with a keen eye for detail. Always delivers high-quality work on time."
+        name: "Paul Cooke",
+        relation: "Lhasa Limited Internship Manager (personal reference)",
+        text: "Austin has worked with me as a placement student as part of his college\n" +
+            "course over a 3 month period, 2 days a week. He has been working on a modern\n" +
+            "SPA built with Angular 17 (typescript) and Spring Boot 3 (Java 17), working\n" +
+            "as part of a small scrum team who practise CI/CD. Worked on both FE & BE\n" +
+            "including unit (Junit/Jasmine) and API tests (Spring REST Template),\n" +
+            "starting with small bug-fixes and now integrating theming into the app from\n" +
+            "an in-house UI library (exposure to tailwind). Tooling IntelliJ, JIRA,\n" +
+            "Jenkins, BitBucket/git, SonarQube, MEND. Austin has a passion for technology\n" +
+            "and often shows me examples of, or talks about programming he has been doing\n" +
+            "in his own time."
     },
     {
         id: 2,
@@ -102,7 +111,7 @@ export default function StandardPortfolioContent() {
                     {testimonials.map((testimonial) => (
                         <Card key={testimonial.id} className="flex flex-col h-full">
                             <CardContent className="flex flex-col flex-grow pt-6">
-                                <p className="text-lg mb-4 flex-grow">"{testimonial.text}"</p>
+                                <p className="text-lg mb-4 flex-grow">&#34;{testimonial.text}&#34;</p>
                                 <div className="mt-auto">
                                     <p className="font-semibold">{testimonial.name}</p>
                                     <p className="text-sm text-muted-foreground">{testimonial.relation}</p>
