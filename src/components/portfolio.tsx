@@ -17,7 +17,7 @@ export function Portfolio() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Main title */}
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-8 text-center">
-                    Hi I&#39;m Austin Davison <span className="waving-hand">👋</span>
+                    Hi, I&#39;m Austin Davison <span className="waving-hand">👋</span>
                 </h1>
 
                 <div className="flex flex-col items-center mb-12">

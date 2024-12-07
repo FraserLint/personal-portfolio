@@ -2,26 +2,31 @@ import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from 'lucide-react'
+import Link from "next/link";
 
 // Example project data
 const projects = [
     {
         id: 1,
-        title: "E-commerce Platform",
-        description: "A full-stack e-commerce solution with React and Node.js",
-        image: "/placeholder.svg?height=200&width=300"
+        title: "Dock Street Studios Photography Website",
+        description: "An innovative redesign for Dock Street Studios SEO optimised website when moving to a new location and rebranding. " +
+            "Using web design tools such as Webflow to create an easy to manage CMS.",
+        image: "/project_screenshots/dockstreetscreenshot.png",
+        link: "https://www.dockstreetstudioleeds.co.uk/"
     },
     {
         id: 2,
         title: "Task Management App",
         description: "A productivity app built with React and Firebase",
-        image: "/placeholder.svg?height=200&width=300"
+        image: "/placeholder.svg?height=200&width=300",
+        link: "/dockstreetscreenshot.png"
     },
     {
         id: 3,
         title: "Weather Dashboard",
         description: "Real-time weather information using a third-party API",
-        image: "/placeholder.svg?height=200&width=300"
+        image: "/placeholder.svg?height=200&width=300",
+        link: "/dockstreetscreenshot.png"
     },
 ]
 
@@ -44,9 +49,16 @@ const testimonials = [
     },
     {
         id: 2,
-        name: "Jane Smith",
-        relation: "Client",
-        text: "Transformed our business with an innovative web application. Highly recommended!"
+        name: "Mark Wheelwright",
+        relation: "Aire Street / Dock Street Studio - Director",
+        text: "I hired Austin on a freelancer basis to deliver a website and SEO strategy. \n" +
+            "The results were impressive and outcomes much higher than I could have envisioned. \n" +
+            "My current website was outdated and had a lot of offsite code which was damaging my Google Lighthouse performance and impacting SEO reputation. \n" +
+            "The customer experience and call to action was poor. \n" +
+            "Austin worked through a phased improvement plan and brought lots of ideas and innovation to the process as we went along. \n" +
+            "I am not a web developer myself so Austin advised me as we went along the process and developed the brief into something much better than I could have created alone.\n" +
+            "The result was a much higher ranking website and healthier Google SEO report which will future proof the website for a while. \n" +
+            "The return on investment was very good and I will always use Austin in future as do some of my other clients who have had excellent advice and service. "
     },
     {
         id: 3,
@@ -95,9 +107,8 @@ export default function StandardPortfolioContent() {
                             </CardHeader>
                             <CardContent className="flex flex-col flex-grow">
                                 <p className="text-muted-foreground mb-4 flex-grow">{project.description}</p>
-                                <Button className="group mt-auto" variant="outline">
-                                    See Project
-                                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                                <Button asChild className="group mt-auto" variant="outline">
+                                    <Link href={project.link}>See project<ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" /></Link>
                                 </Button>
                             </CardContent>
                         </Card>
