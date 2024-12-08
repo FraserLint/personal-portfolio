@@ -33,8 +33,9 @@ export const projects = [
     {
         id: 5,
         title: "Happy2Help: A Discord Chatbot",
-        description: "A Discord chatbot to do all the things a good discord bot should do using the python pycord lib, " +
-            "music, kick, ban, mute/unmute, clear, 8ball. (I wrote this at age 14 and it was got me properly hooked with programming. ",
+        description: "A Discord chatbot to do all the things a good discord bot should do (music, kick, ban, mute/unmute, clear, 8ball) " +
+            "- using the python pycord library. " +
+            "I wrote this project at age 14 and it was what originally got me properly hooked with programming. ",
         image: "https://i.imgur.com/Y9B5csv.png",
         link: "https://github.com/FraserLint/Happy2Help"
     },
