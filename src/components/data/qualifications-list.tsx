@@ -1,5 +1,5 @@
 export const qualifications = [
-    { id: 1, name: "T-Level in Digital Production Design & Development", grade: "Expected B" },
+    { id: 1, name: "T-Level in Digital Production Design & Development", grade: "Expected C-Distinction" },
     { id: 2, name: "GCSE Computer Science", grade: "6" },
     { id: 3, name: "GCSE Maths", grade: "6" },
     { id: 4, name: "GCSE English Language", grade: "6" },
