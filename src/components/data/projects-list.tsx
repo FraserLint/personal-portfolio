@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 1,
         title: "RZA Zoo Mock Website",
-        description: "A mock project (in the form of a fictional website for RZA Zoo) for my 2nd year T-Level in Digital Production Design & Development course occupational specialism task.",
+        description: "A mock project (in the form of a fictional website for RZA Zoo) built with Next.js and Prisma for my 2nd year T-Level in Digital Production Design & Development course occupational specialism task.",
         image: "https://i.imgur.com/QdX3474.png",
         link: "https://github.com/FraserLint/rza-zoo-tlevel-dpdd-os-mock"
     },
